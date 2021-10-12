@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&display=swap');
+:root {
+    --orange: #F1512D;
+    --dark-blue: #334F80;
+    --mid-blue: #277B96;
+    --mid-blue-hover: #509cb5;
+    --light-blue: #7EC9D0;
+    --eggplant: #312E4B;
+    --red: #9A2712;
+} 
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+}
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(126, 201, 208,.5) 50%, transparent 50%),
+    linear-gradient(rgba(126, 201, 208,.5) 50%, transparent 50%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    overflow: visible;
+}
+.rhombus-box {
+    width: 50%;
+    display: grid;
+    height: 7rem;
+    grid-template-areas: "main";
+    margin: 0.5rem;
+}
+.shadow {
+    grid-area: main;
+    margin: 0;
+    background-color: var(--dark-blue);
+    opacity: 0.5;
+    clip-path: polygon(0% 19%,99% 0%,98% 100%,0% 100%);
+    transform: translate(10px, 10px);
+    z-index:1;
+}
+.rhombus {
+    grid-area: main;
+    margin: 0;
+    background-color: var(--orange);
+    clip-path: polygon(0% 19%,99% 0%,98% 100%,0% 100%);
+    text-align: center;
+    z-index: 99;
+    position: relative;
+}
+.rhombus > h1 {
+    position: absolute;
+    bottom: 0.6em;
+    left: 23%;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 3px var(--red);
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+nav {
+    width: 50%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.button-nav {
+    border: none;
+    background-color: var(--mid-blue);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-family: 'DM Serif Display';
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.button-nav:hover {
+    background-color: var(--mid-blue-hover);
+}
+.home {
+    text-align: center;
+    margin: 1rem;
+}
+.home p {
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 900;
+}
+.chef {
+    margin: 2rem;
+    border: solid 10px goldenrod;
+    border-radius: 50%;
+    box-shadow: 1px 1px 13px 8px rgba(0,0,0,0.21);
+}
+.home .stars {
+    color: goldenrod;
+    font-size: 5rem;
+}
+.review-section {
+    display: flex;
+    justify-content: center;
+}
+.blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    padding: 2%;
+}
+.quotebox {
+    width: 40%;
+    font-size: larger;
+    font-weight: bold;
+}
+.antonego {
+    width: 30%;
+    box-shadow: 1px 1px 13px 8px rgba(0,0,0,0.21);
+    border-radius: 50%;
+    border: 7px solid var(--eggplant);
+}
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.book * {
+    margin: 0;
+    font-weight: 900;
+}
+.book-image {
+    height: 60vh;
+}
+.book p {
+    font-size: 1.2rem;
+}
