@@ -1,6 +1,6 @@
 # restaurant-page
 
-Restaurant Page project!
+[Restaurant Page project!](https://homeworkmon.github.io/restaurant-page/)
 
 JS organization inspired by [micalosman](https://github.com/michalosman/restaurant-page) (ty!)
 
