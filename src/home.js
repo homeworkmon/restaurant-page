@@ -3,7 +3,7 @@ function createHome() {
     home.classList.add('home');
 
     const gusteau = new Image();
-    gusteau.src = '../dist/images/Auguste_Gusteau.jpg';
+    gusteau.src = 'images/Auguste_Gusteau.jpg';
     gusteau.alt = 'Chef Gusteau';
     gusteau.classList.add('chef');
 
