@@ -29,7 +29,7 @@ function createBlurb(author, description) {
 
     const authorImage = new Image();
     const attributedSrc = (author.replace(/\s/g, "")).toLowerCase();
-    authorImage.src = `../dist/images/reviews/${attributedSrc}.jpg`;
+    authorImage.src = `images/reviews/${attributedSrc}.jpg`;
     authorImage.alt = `${author}`;
     authorImage.classList.add(`${attributedSrc}`);
 

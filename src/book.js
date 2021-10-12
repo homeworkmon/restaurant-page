@@ -6,7 +6,7 @@ function createBook() {
     title.textContent = "Anyone can cook!";
 
     const bookImage = document.createElement('img');
-    bookImage.src = '../dist/images/anyone-can-cook-book.jpg';
+    bookImage.src = 'images/anyone-can-cook-book.jpg';
     bookImage.alt = 'Anyone Can Cook';
     bookImage.classList.add('book-image');
     bookImage.addEventListener('click', () => {
